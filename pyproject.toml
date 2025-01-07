@@ -1,0 +1,15 @@
+[project]
+name = "browser-use-webui-multimodel"
+version = "0.1.0"
+description = "browser-use-webui for multi ai models"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "browser-use>=0.1.17",
+    "gradio>=5.10.0",
+    "langchain-google-genai>=2.0.8",
+    "langchain-ollama>=0.2.2",
+    "playwright>=1.49.1",
+    "pyperclip>=1.9.0",
+    "python-dotenv>=1.0.1",
+]
