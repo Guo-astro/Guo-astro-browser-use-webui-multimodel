@@ -11,12 +11,12 @@ from typing import Optional
 from browser_use.browser.browser import Browser, BrowserConfig
 from browser_use.browser.context import BrowserContextConfig, BrowserContext
 
-from src.browser.custom_context import EnhancedBrowserContext
+from src.browser.enhanced_playwright_browser_context import EnhancedBrowserContext
 
 logger = logging.getLogger(__name__)
 
 
-class SpecializedBrowser(Browser):
+class EnhancedPlaywrightBrowser(Browser):
     """
     A specialized Browser implementation that yields a CustomBrowserContext
     upon requesting a new context.

@@ -7,7 +7,7 @@ from playwright.async_api import async_playwright
 
 from src.agent.browser_agent import BrowserAgent
 from src.agent.browser_system_prompts import BrowserSystemPrompt
-from src.browser.custom_browser import SpecializedBrowser
+from src.browser.enhanced_playwright_browser import EnhancedPlaywrightBrowser
 from src.controller.custom_controller import CustomController
 
 async def run_custom_agent(
@@ -53,7 +53,7 @@ async def run_custom_agent(
             browser_context_ = None
 
         # Create a new specialized browser with your custom logic
-        browser = SpecializedBrowser(
+        browser = EnhancedPlaywrightBrowser(
             config=BrowserConfig(
                 headless=headless,
                 disable_security=disable_security,

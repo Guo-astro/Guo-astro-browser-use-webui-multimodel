@@ -114,8 +114,8 @@ async def test_browser_use_custom() -> None:
     from playwright.async_api import async_playwright
     from browser_use.browser.context import BrowserContextWindowSize
 
-    from src.browser.custom_browser import CustomBrowser, BrowserConfig
-    from src.browser.custom_context import BrowserContext, BrowserContextConfig
+    from src.browser.enhanced_playwright_browser import CustomBrowser, BrowserConfig
+    from src.browser.enhanced_playwright_browser_context import BrowserContext, BrowserContextConfig
     from src.controller.custom_controller import CustomController
     from src.agent.browser_agent import CustomAgent
     from src.agent.browser_system_prompts import CustomSystemPrompt
